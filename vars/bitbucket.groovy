@@ -1,3 +1,12 @@
-def call(repo_url){
-  echo "This is my repo url"
+def scm(Map parameter){
+  def name = "${parameter.name}"
+  stage('Wish'){
+    try {
+      echo "${name}"
+    }
+    catch (e)
+      echo "Fail"
+    }
+  }
 }
+def 
