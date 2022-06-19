@@ -1,4 +1,4 @@
-def scm(Map parameter){
+def scms(Map parameter){
   def GIT_URL = "${parameter.GIT_URL}"
   def TAG = "${parameter.TAG}"
   stage('Wish'){
