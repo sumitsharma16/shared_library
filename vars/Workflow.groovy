@@ -1,1 +1,5 @@
-a
+def call(Map parameter){
+  node{
+    
+
+}
