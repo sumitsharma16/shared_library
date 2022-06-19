@@ -1,12 +1,14 @@
 def scm(Map parameter){
-  def name = "${parameter.name}"
+  def bitbucket_URL = "${parameter.bitbucket_URL}"
+  def TAG = "${parameter.TAG}"
   stage('Wish'){
     try {
-      echo "${name}"
+      echo "$bitbucket_URL"
+      echo "$TAG"
     }
     catch (e)
       echo "Fail"
     }
   }
 }
-def 
+
