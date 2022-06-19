@@ -1,6 +1,6 @@
 def call(Map parameter) {
     
-    git.checkoutScm()
+    bitbucket.scms()
     config = pipelineConfig.readPropFiles(
         configFile: "${parameter.configFile}"
     )
