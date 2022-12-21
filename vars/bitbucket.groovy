@@ -1,10 +1,10 @@
 def scms(Map parameter){
   def GIT_URL = "${parameter.GIT_URL}"
-  def TAG = "${parameter.TAG}"
+  def BRANCH = "${parameter.BRANCH}"
   stage('Wish'){
     try {
       echo "$GIT_URL"
-      echo "$TAG"
+      echo "$BRANCH"
     }
     catch (e)
       echo "Fail"
