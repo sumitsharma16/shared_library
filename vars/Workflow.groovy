@@ -7,6 +7,6 @@ def call(Map parameter) {
      bitbucket.scms(
         stageName: "checkout SCM",
         GIT_URL:   "${config.GIT_URL}",
-        TAG:    "${config.TAG}"
+        BRANCH:    "${config.TAG}"
     )
 }
